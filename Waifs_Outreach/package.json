@@ -4,8 +4,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./public/styles.css -o ./public/output.css",
-    "build-dev": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch"
+    "build": "npx tailwindcss -i ./styles.css -o ./output.css",
+    "build-dev": "npx tailwindcss -i ./styles.css -o ./output.css --watch"
 
   },
   "author": "",
