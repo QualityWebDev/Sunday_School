@@ -19,6 +19,10 @@
     ],
     "routes": [
       {
+        "src": "/good-news/(.*)\\.(jpg|jpeg|png|gif|svg)",
+        "dest": "/good-news/$1.$2"
+      },
+      {
         "src": "/good-news/(.*)",
         "dest": "/good-news/gospel.html"
       },
