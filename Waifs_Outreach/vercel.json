@@ -15,12 +15,12 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      },
-      {
         "src": "/good-news/(.*)",
         "dest": "/good-news/gospel.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
       }
     ]
   }
