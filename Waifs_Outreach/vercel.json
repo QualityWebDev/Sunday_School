@@ -5,6 +5,10 @@
         "use": "@vercel/static"
       },
       {
+        "src": "/good-news/gospel.html",
+        "use": "@vercel/static"
+      },
+      {
         "src": "styles.css",
         "use": "@vercel/static"
       }
@@ -13,6 +17,10 @@
       {
         "src": "/(.*)",
         "dest": "/index.html"
+      },
+      {
+        "src": "/good-news/(.*)",
+        "dest": "/good-news/gospel.html"
       }
     ]
   }
