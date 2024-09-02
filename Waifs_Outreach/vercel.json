@@ -11,6 +11,10 @@
       {
         "src": "styles.css",
         "use": "@vercel/static"
+      },
+      {
+        "src": "/good-news/cover.jpg",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
