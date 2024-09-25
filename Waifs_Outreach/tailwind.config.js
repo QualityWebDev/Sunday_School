@@ -1,6 +1,6 @@
 //tailwind.config.js
 module.exports = {
-  content: ["./index.html", "./app.js"], // Correct relative path
+  content: ["./index.html"], // Correct relative path
   theme: {
     extend: {},
   },
