@@ -1,4 +1,4 @@
-import { en, es } from '/good-news/languages.js';
+import { en, es } from '/languages.js';
 
 export let lang = 'en';
 
