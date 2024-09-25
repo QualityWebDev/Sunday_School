@@ -1,13 +1,12 @@
-// gospel.js
-import { initializePageContent } from './pageLogic.js';
+import { initializePageContent } from '/good-news/pageLogic.js';
 
 class PageContent extends HTMLElement {
     connectedCallback() {
         const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get('lang') || localStorage.getItem('preferredLanguage') || 'en'; // Use stored or default lang
+        const lang = urlParams.get('lang') || localStorage.getItem('preferredLanguage') || 'en'; // Use stored or default lang
 
-    // Initialize all logic for the page
-    initializePageContent(this, lang); // Pass the language variable
+        // Initialize all logic for the page
+        initializePageContent(this, lang); // Pass the language variable
     }
 
     render(languageObject) {
