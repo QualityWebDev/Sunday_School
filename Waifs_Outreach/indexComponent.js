@@ -1,3 +1,4 @@
+//indexComponent.js
 class IndexContent extends HTMLElement {
   connectedCallback() {
       this.updateContent();  // Initialize with default content
