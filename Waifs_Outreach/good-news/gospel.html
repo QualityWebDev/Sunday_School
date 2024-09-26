@@ -1,4 +1,4 @@
-<!-- index.html -->
+<!-- gospel.html -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,31 +8,16 @@
         <meta name="description" content="You need to be saved, and you need to be saved as soon as possible. Learn how.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="/languageSwitch.js"></script>
+        <script src="/good-news/gospelComponent.js"></script>
         <link rel="icon" href="/logo.svg">
     </head>
     <body class=" bg-slate-200">
-        <header class="shadow-md shadow-slate-700 w-screen py-2 bg-slate-800 flex justify-center items-center content-center">
-            <nav class="w-fit flex justify-around items-center content-center">
-                <p class="hover:bg-slate-700 px-2 py-1 rounded-sm text-slate-400 border-r border-solid border-slate-300/50"><a href="/good-news/gospel.html">Good News</a></p>
-                <p class="hover:bg-slate-700 px-2 py-1 rounded-sm text-slate-400 border-l border-solid border-slate-300/50"><a href="/index.html">Sign Up</a></p>
-            </nav>
-        </header>
-        <main class="w-screen m-0 py-6 flex items-center justify-center">
-            <div class="w-9/12">
-                <img src="/good-news/cover.jpg" alt="Cross on a rugged hill." class="mb-5 rounded-sm">
-                <h1 class="text-4xl font-bold text-center text-blue-950">Your Only Hope Is Christ</h1>
-                <article>
-                    <p class="text-justify text-slate-900 my-2">Do you know you need to be saved? Saved from what? You need to be saved from God no matter who you are! And the only one who can save you from God, is God.</p>
-                    <p class="text-justify text-slate-900 my-2">You and I were born and began disobeying, and rebelling against God, who made us, and has TOTAL authority over our lives. God says that because of this He will “throw [you] into the fiery furnace. In that place there will be weeping and gnashing of teeth.” (Matt 13:42)</p>
-                    <p class="text-justify text-slate-900 my-2">So, as you see, we are all in a terrible situation! God is righteous, we have sinned and disobeyed Him, and he’s going to cast us into hell when we die! What can you do to save yourself? The answer is: nothing. You can’t save yourself.</p>
-                    <p class="text-justify text-slate-900 my-2">But, there is someone else who can save you. His name is Jesus Christ. Jesus Christ is God, and is the Son of God: "...Jesus is the Christ, the Son of God..." (John 20:31)</p>
-                    <p class="text-justify text-slate-900 my-2">So, how can Jesus save you? Jesus is God. And yet, he came to earth, and was born just like you and me! Jesus lived a PERFECT life, and never disobeyed God His Father once. Jesus is the only man who does not deserve hell. And yet, Jesus let wicked men kill him by hanging Him on a cross. But as Jesus died, there was something much bigger happening. God the Father was punishing his own Son, for the sins of those whom God will save. “it was the will of the LORD to crush him; he has put him to grief; when his soul makes an offering for guilt...” (Isa 53:10)</p>
-                    <p class="text-justify text-slate-900 my-2">But, Jesus did not stay dead, three days after he died, He rose, and is alive today, in heaven, where He rules. One day He will come back and judge the world.</p>
-                    <p class="text-justify text-slate-900 my-2">So, how can you be saved by Jesus? You must come to Jesus as the only way to be saved! You must submit to Him as your ruler. You must believe he is all the the Bible says he is! Then, instead of God’s eternal wrath in hell, you will experience God’s eternal blessing. "..Repent and believe in the gospel." (Mark 1:15)</p>
-                    <p class="text-justify text-slate-900 my-2">And so, I end with the words that Jesus himself has spoken: “All that the Father gives me will come to me, and whoever comes to me I will never cast out.” (John 6:37)</p>
-                </article>
-                <p class="text-justify text-slate-900 my-2">To Learn more see <a class="text-blue-800" href="https://illbehonest.com/biblical-gospel">this video</a>.</p>
-            </div>
-        </main>
+        <gospel-content></gospel-content>
+        <img id="close" src="/close.svg" class="h-5 fixed top-14 right-5 -mr-2 mt-1 border border-red border-solid bg-slate-300 rounded-xl z-10 hover:bg-slate-400">
+        <div id="btnsDiv" class="fixed right-2 top-14 bg-slate-800 pt-7 pb-4 pl-3 pr-5 rounded-sm grid gap-2 sm:flex">
+            <button id="Spanish" class="text-sm bg-slate-300 px-2 py-1 mx-1 rounded-xl hover:bg-slate-400 text-slate-950">Español</button>
+            <button id="English" class="text-sm bg-slate-300 px-2 py-1 rounded-xl hover:bg-slate-400 text-slate-950">English</button>
+        </div>
     </body>
 </html>
