@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const hideDiv = () => {
+  console.log("Close clicked!")
   document.getElementById("btnsDiv")?.classList.add('hidden');
   document.getElementById('close')?.classList.add('hidden');
 }
