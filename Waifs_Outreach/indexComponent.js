@@ -20,8 +20,10 @@ class IndexContent extends HTMLElement {
           <form action="https://getform.io/f/bejyndga" method="POST" class="grid justify-center p-8 gap-4">
             <div class="grid justify-center items-center content-center">
               <input class="mb-4 px-2 rounded-sm bg-slate-100 sm:w-60 md:w-80 w-52 text-sm py-1" type="text" name="Parent_Name" placeholder="${main.fields?.parentName || 'Parent Name'}">
-              <input class="mb-4 px-2 rounded-sm bg-slate-100 w-52 sm:w-60 md:w-80  text-sm py-1" type="text" name="Child's Name'" placeholder="${main.fields?.childName || 'Child/Children\'s First Name(s)'}">
-              <p class="text-xs pb-4 -mt-3 text-slate-900 w-52 sm:w-60 md:w-80">${main.fields?.fieldComment?.comment || '(if you have more than one child, separate their names with commas.)'}</p>
+              <input class="mb-4 px-2 rounded-sm bg-slate-100 w-52 sm:w-60 md:w-80  text-sm py-1" type="text" name="Child's Name" placeholder="${main.fields?.childName || 'Child/Children\'s First Name(s)'}">
+              <p class="text-xs pb-4 -mt-3 text-slate-900 w-52 sm:w-60 md:w-80">${main.fields?.fieldComment?.commentOne || '(if you have more than one child, separate their names with commas.)'}</p>
+              <input class="mb-4 px-2 rounded-sm bg-slate-100 w-52 sm:w-60 md:w-80  text-sm py-1" type="text" name="Child(rens) age(s)" placeholder="${main.fields?.childAge || 'Child(rens) age(s)}'}"/>
+              <p class="text-xs pb-4 -mt-3 text-slate-900 w-52 sm:w-60 md:w-80">${main.fields?.fieldComment?.commentTwo || '(if you have more than one child, separate their ages with commas.)'}</p>
               <input class="mb-4 px-2 rounded-sm bg-slate-100  text-sm py-1" type="number" name="Phone_Number" placeholder="${main.fields?.phoneNumber || 'Phone Number'}">
               <input class="px-2 rounded-sm bg-slate-100  text-sm py-1" type="text" name="Address" placeholder="${main.fields?.address || 'Address'}">
             </div>

@@ -9,8 +9,10 @@ export const en1 = {
         fields: {
             parentName: "Parent Name",
             childName: "Child/Children's First Name(s)",
+            childAge: "Child(rens) age(s)",
             fieldComment: {
-                comment: "(if you have more than one child, separate their names with commas.)"
+                commentOne: "(if you have more than one child, separate their names with commas.)",
+                commentTwo: "(if you have more than one child, separate their ages with commas.)"
             },
             phoneNumber: "Phone Number",
             address: "Address",
@@ -30,8 +32,10 @@ export const es1 = {
         fields: {
             parentName: "Nombre del Padre/Madre",
             childName: "Nombre(s) del Niño/Niños",
+            childAge: "Edad(es) del/de los niño(s)",
             fieldComment: {
-                comment: "(si tienes más de un niño, separa sus nombres con comas.)"
+                commentOne: "(si tienes más de un niño, separa sus nombres con comas.)",
+                commentTwo: "(si tiene más de un hijo, separe sus edades con comas.)"
             },
             phoneNumber: "Número de Teléfono",
             address: "Dirección",
